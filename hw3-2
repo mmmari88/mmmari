@@ -1,0 +1,10 @@
+// Откройте в VSCode task2.json файл. Скопируйте из него JSONку, вставьте в свой код (присвоив в переменную)
+
+const fs = require('fs')
+const users = JSON.parse(fs.readFileSync("./task2.json"))
+let uniquePersons = []
+persons.forEach((el) => {
+    if (uniquePersons.indexOf(JSON.stringify(el)) === -1) {
+        uniquePersons.push(JSON.stringify(el));
+}
+});
